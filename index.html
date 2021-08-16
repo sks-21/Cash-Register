@@ -11,21 +11,22 @@
     <main>
       <h1>Cash Register</h1>
       <small>Currencies available : 1, 5, 10, 20, 100, 500, 2000</small>
-      <p>
-        <label for="input-bill">Bill Amount</label>
-        <input type="text" name="input-bill" id="input-bill" />
-      </p>
-      <p>
-        <label for="input-cash">Cash Given</label>
-        <input type="text" name="input-cash" id="input-cash" />
-      </p>
 
-    <p>
-      <button>Calculate</button>
-    </p>
-    
-    <textarea name="output" id="output" cols="30" rows="10"></textarea>
-    
+      <form action="/">
+        <p>
+          <label for="inputBill">Bill Amount</label>
+          <input type="number" name="inputBill" id="inputBill" />
+        </p>
+        <p>
+          <label for="inputCash">Cash Given</label>
+          <input type="number" name="inputCash" id="inputCash" />
+        </p>
+
+        <p>
+          <button name="calculate">Calculate</button>
+        </p>
+      </form>
+      <div class="output-div" id="output-div">display out</div>
     </main>
 
     <script src="app.js"></script>
