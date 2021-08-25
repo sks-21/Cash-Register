@@ -1,34 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <main>
-      <h1>Cash Register</h1>
-      <small>Currencies available : 1, 5, 10, 20, 100, 500, 2000</small>
 
-      <form action="/">
-        <p>
-          <label for="inputBill">Bill Amount</label>
-          <input type="number" name="inputBill" id="inputBill" />
-        </p>
-        <p>
-          <label for="inputCash">Cash Given</label>
-          <input type="number" name="inputCash" id="inputCash" />
-        </p>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-        <p>
-          <button name="calculate">Calculate</button>
-        </p>
-      </form>
-      <div class="output-div" id="output-div">display out</div>
-    </main>
+<body>
 
-    <script src="app.js"></script>
-  </body>
+  <div class="div-container">
+    <h1>Cash Register</h1>
+    <small>Currencies available : 1, 5, 10, 20, 100, 500, 2000</small>
+
+    <form action="/">
+      <p>
+        <label for="inputBill" class="label-bill">Bill Amount</label>
+        <input type="number" name="inputBill" id="inputBill" class="input-bill" />
+      </p>
+      <p>
+        <label for="inputCash" class="label-cash">Cash Given</label>
+        <input type="number" name="inputCash" id="inputCash" class="input-cash" />
+      </p>
+
+      <p>
+        <button name="calculate">Calculate</button>
+        <button name="clear">Clear</button>
+      </p>
+    </form>
+    <div class="div-output" id="output-div"></div>
+
+
+    <footer>
+      <div class="footer-heading">Let's Connect &#128512 </div>
+      <ul class="list-non-bullet">
+        <li class="list-element-inline">
+          <a href="https://linkedin.com/in/shashank213" class="link-no-decoration">LinkedIn</a>
+        </li>
+        <li class="list-element-inline">
+          <a href="https://github.com/sks-21" class="link-no-decoration">Github</a>
+        </li>
+        <li class="list-element-inline">
+          <a href="https://www.instagram.com/_sks_21_/" class="link-no-decoration">Instagram</a>
+        </li>
+      </ul>
+    </footer>
+
+  </div>
+  <script src="app.js"></script>
+</body>
+
 </html>

@@ -10,13 +10,11 @@ function calcAmt(billAmt, cashGiven) {
   billAmt = parseInt(billAmt);
   cashGiven = parseInt(cashGiven);
   if (billAmt > cashGiven) {
-      console.log(1);
+    console.log(1);
     msg = "Please provide more cash";
-  } 
-  else if (billAmt === cashGiven) {
+  } else if (billAmt === cashGiven) {
     msg = "Exact amount given. Nothing to return !";
-  } 
-  else {
+  } else {
     let amt = cashGiven - billAmt;
     let i = 0;
     while (amt > 0) {
@@ -43,12 +41,21 @@ form.elements.calculate.addEventListener("click", (e) => {
 
   let bill = billEl.value;
   let cash = cashEl.value;
-console.log('bill value is ', bill);
-console.log('cash value is ', cash);
+  console.log("bill value is ", bill);
+  console.log("cash value is ", cash);
   //program logic
   let ans = calcAmt(bill, cash);
 
   billEl.value = "";
   cashEl.value = "";
   outputDiv.innerHTML = ans;
+});
+
+form.elements.clear.addEventListener("click", (e) => {
+  e.preventDefault();
+  let billEl = form.elements.inputBill;
+  let cashEl = form.elements.inputCash;
+  billEl.value = "";
+  cashEl.value = "";
+  outputDiv.innerText = "";
 });
