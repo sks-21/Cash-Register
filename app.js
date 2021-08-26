@@ -41,8 +41,7 @@ form.elements.calculate.addEventListener("click", (e) => {
 
   let bill = billEl.value;
   let cash = cashEl.value;
-  console.log("bill value is ", bill);
-  console.log("cash value is ", cash);
+
   //program logic
   let ans = calcAmt(bill, cash);
 

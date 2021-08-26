@@ -26,7 +26,6 @@ body {
 h1 {
   font-size: 5rem;
   margin-top: 0rem;
-  /* padding-top: 0.5rem; */
   margin-bottom: 0.2rem;
   color: var(--primary-color);
 }
@@ -100,7 +99,6 @@ button:active {
 
 /* Footer */
 footer {
-  background-color: var(--primary-color);
   padding: 1em 0em;
   border-top-right-radius: 2rem;
   border-bottom-right-radius: 0.2rem;
@@ -113,7 +111,6 @@ footer {
 }
 
 .footer-heading {
-  color: white;
   font-weight: bold;
   font-size: 1rem;
 }
@@ -128,15 +125,12 @@ footer li {
 }
 
 footer a {
-  color: white;
   padding: 1rem;
   text-decoration: none;
 }
 
-/* .list-non-bullet{
-list-style: none;
-} */
-
-/* .list-element-inline{
-display: inline-block;
-} */
+a:hover {
+  font-weight: bold;
+  color: black;
+  transition: 0.2s;
+}
