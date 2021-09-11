@@ -7,7 +7,7 @@
 }
 
 body {
-  overflow: hidden;
+  /* overflow: hidden; */
   margin: 0rem;
   font-family: "Noto Sans JP", sans-serif;
   background-color: #e8f5e9;
@@ -104,9 +104,7 @@ footer {
   border-bottom-right-radius: 0.2rem;
   border-top-left-radius: 2rem;
   text-align: center;
-  margin-top: 1rem;
-  position: absolute;
-  bottom: 0;
+  margin-top: 2.5rem;
   width: 800px;
 }
 
@@ -126,6 +124,7 @@ footer li {
 
 footer a {
   padding: 1rem;
+  color: black;
   text-decoration: none;
 }
 
@@ -133,4 +132,17 @@ a:hover {
   font-weight: bold;
   color: black;
   transition: 0.2s;
+}
+
+/* Media queries */
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+
+  .div-output {
+    width: 200px;
+  }
+
+  footer {
+    width: 100%;
+  }
 }
