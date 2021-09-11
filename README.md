@@ -1,2 +1,4 @@
 # Cash Register
- A vanillaJS app for cashier
+Are you a cashier?  
+Want an easy way to calculate the change ?  
+Use this app!
